@@ -22,6 +22,5 @@ from task.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('print_name', print_name),
-    path('app1/', include('app1.urls')),
-    path('app2/',include('app2.urls')),
+    path('app1/', include('app1.urls.py'))
 ]
