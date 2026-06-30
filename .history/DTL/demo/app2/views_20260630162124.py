@@ -22,8 +22,7 @@ def home_html(request): #when this function gets invoked first it goes to last r
 #this is correct way use this way 
 #view calculator
 #first call html page to take input 
-#then after user given value in input field then after submit button is clicked it goes to action tag written in form tag then it goes to app2/calculation url in urls.py and then overthere there is a url which dirests towards the 
-#view of calculation , logic is impelemneted and then agaon on same html page the output is dispalyed by passing output from view to html page in dict form
+#then after user given value in input field then after submit button is clicked it goes to action tag written in form tag then it goes to app2/calcula
 def view_cal(request):
     return render(request, "calci.html")
 
