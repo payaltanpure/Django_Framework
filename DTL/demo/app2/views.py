@@ -8,8 +8,8 @@ def home(request):
 
 
 #1st way hard do not use it
-def home_html(request): #when this function gets invoked first it goes to last return becoz now if cond is false
-    #it goes to home.html and take the input vlaues from user of name and after taking value it comes again to the function now if cond is true
+def home_html(request): #when this function gets invoked first it goes to last return becoz now if cond is false beocz now method type is get as user is fetching the webpage so method is get and cons of if is false
+    #it goes to home.html and take the input vlaues from user of name and after taking value it comes again to the function with post method as user want to save the data not fetch the data or webpage so now if cond is true
     #so , now inside if code will run the value posted from html page will be taken into vaiable and agin passed to same html page from where we take input 
     #and over their the value is displayed of name 
     if request.method=="POST":
