@@ -3,6 +3,7 @@ myenv/
 myworld/
 mynewenv/
 mynew/
+mymainenv/
 
 # Python cache
 __pycache__/
