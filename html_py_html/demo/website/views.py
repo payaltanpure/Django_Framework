@@ -14,9 +14,6 @@ def contactus(request):
 def next(request):
     return render(request, "next.html")
 
-def next(request):
-    return render(request, "next.html")
-
 def back(request):
     return render(request, "index.html")
 
