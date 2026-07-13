@@ -1,5 +1,5 @@
 """
-URL configuration for djangoTags project.
+URL configuration for template_inheritance project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -16,14 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views as v
+from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ex1/', v.ex1, name= "ex1"),
-    path('ex2/<int:marks>/', v.ex2, name= "ex2"),
-    path('ex3/<str:name>/', v.ex3, name= "ex3"),
-    path('ex4/', v.ex4, name= "ex4"),
-    path('ex5/', v.ex5, name="ex5"),
-    path("ex6/", v.ex6, name= "ex6"),
+    path('', index, name="index"),
+    path('mobile/', mobile, name="mobile"),
+    path('beauty/', beauty, name="beauty"),
+    path('index2', index2, name="index2"),
+
+   
 ]

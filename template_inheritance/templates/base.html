@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} navbar  {% endcomment %}
+    <h1>navbar</h1>
+
+       <a href="{% url 'index2' %}">for you</a>
+       <a href="{% url 'mobile' %}">Mobile</a>
+       <a href="{% url 'beauty' %}">Beauty</a>
+       
+       {% block content %}
+        
+       {% endblock %}
+       <h1>Footer</h1>
+
+    
+        
+</body>
+</html>

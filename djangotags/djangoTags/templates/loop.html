@@ -48,6 +48,22 @@
     {% for i in carname %}
     <h1>{{i}}</h1>
     {% endfor %}
+
+
+    <h1>Nested for loop</h1>
+    {% for items in i %}
+        {% for nos in j %}
+           <h2>{{items}}- {{nos}}</h2>
+        {% endfor %}
+    {% endfor %}
+
+    <hr>
+    <h1>LOOP THROUGH DICTIONARY</h1>
+    {% for key , val in stud.items %}
+       <h2>{{key}} - {{val}}</h2>
+    {% endfor%}
+
+
         
         
 </body>

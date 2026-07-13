@@ -28,3 +28,19 @@ def ex4(request):
 
     }
     return render(request, "loop.html", data)
+
+def ex5(request):
+    data= {
+        'i': [1,2,3,4],
+        'j': [10,20,30,40]
+    }
+    return render(request, "loop.html", data)
+
+def ex6(request):
+    data={
+       "stud" : {
+        "id": 101,
+        "name": "ram"}
+    }
+    
+    return render(request, "loop.html", data)
